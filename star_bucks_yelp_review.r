@@ -81,4 +81,7 @@ df <- data.frame ("date" = review_date_all,
                   "user" = user_all,
                   "location" = location_all)
   
+
+df$date <- as.Date(df$date, "%m/%d/%Y")
+
 view(df)
